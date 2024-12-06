@@ -85,7 +85,7 @@ class ProductList extends LitElement {
   }
 
   async fetchData() {
-    const response = await fetch(`${import.meta.env.VITE_PB_API}/collections/products/records`);
+    const response = await fetch(`${import.meta.env.VITE_PB_API}collections/products/records`);
 
     const data = await response.json();
     this.data = data;
